@@ -4,4 +4,7 @@ resource "aws_instance" "web" {
    tags = {Name = "airbnb-web-server"} 
    monitoring = true
    ebs_optimized = true
+   root_block_device {
+   encrypted     = true
+     }
 }
