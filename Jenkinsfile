@@ -1,5 +1,5 @@
 def COLOR_MAP = [
-    'SUCCESS': 'good',
+    'SUCCESS': 'goog',
     'FAILURE': 'danger',
 ]
 
@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage('GITcheckout') {
             steps {
-                echo 'adding code'
+                echo 'adding codes'
                 git branch: 'main', url: 'https://github.com/fotsoosee/airbnb-infra.git'
             }
         }
